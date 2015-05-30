@@ -1,0 +1,35 @@
+ 
+Описание функции                    Метод запроса       Пример запроса	   
+Получить список стран               GET                 GET /restapi/country HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0	   
+Получить список отелей в стране	    GET	                GET /restapi/country/ukraine HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0	   
+Добавить страну	                    POST                POST /restapi/country HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0
+                                                        Content-Length: 7
+                                                        Content-Type: text
+
+                                                        vietnam	   
+Добавить отель в страну	            POST                POST /restapi/country/vietnam HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0
+                                                        Content-Length: 11
+                                                        Content-Type: text
+
+                                                        luxuryhotel	   
+Удалить определенный отель          DELETE              DELETE /restapi/country/vietnam/luxuryhotel HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0	   
+Получить инф. об определ. отеле	    GET	                GET /restapi/country/vietnam/luxuryhotel HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0	   
+Обновить инф. об определ. отеле	    PUT	                PUT /restapi/country/vietnam/luxuryhotel HTTP 1.1
+                                                        Host: my.site.com
+                                                        User-Agent: Internet-Explorer 9.0
+                                                        Content-length: 11
+                                                        Content-Type: text
+
+                                                        Recommended	 
