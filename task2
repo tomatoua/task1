@@ -13,7 +13,7 @@
                                                         Content-Type: text
 
                                                         vietnam	   
-Добавить отель в страну	            POST	              POST /restapi/country/vietnam HTTP 1.1
+Добавить отель в страну	            POST                POST /restapi/country/vietnam HTTP 1.1
                                                         Host: my.site.com
                                                         User-Agent: Internet-Explorer 9.0
                                                         Content-Length: 11
