@@ -1,0 +1,11 @@
+Написать запрос для поиска всех студентов, у которых score > 93% и меньше 95% по любому из типов выполненных заданий.
+
+> db.myCol.find( { scores: {$elemMatch: {type: {$gt:""}, score: {$gt:93,$lt:95} } } })
+
+Написать запрос-агрегацию для выборки всех студентов, у которых результат по экзамену (type: "exam") более 90% (использование unwind)
+
+> db.myCol.aggregate( { $match: { scores: {$elemMatch: {type: "exam", score: {$gt:90} } } } }, { $unwind:"$scores" } ).pretty()
+
+Студенту с именем Vinnie Auerbach добавить поле “accepted” со значением true.
+
+> db.myCol.update({name:"Vinnie Auerbach"}, { $set: { accepted: "true" }  })
